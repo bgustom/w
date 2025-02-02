@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catur Sederhana</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <header>
+        <h1>Catur Sederhana</h1>
+        <nav>
+            <button onclick="location.href='permainan.html'" class="nav-button">Kembali ke Permainan</button>
+            <button id="dark-mode-toggle" class="nav-button">🌙</button>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="chessboard-container">
+            <div id="chessboard"></div>
+        </div>
+        <aside id="move-history-container">
+            <h2>Riwayat Gerakan</h2>
+            <div id="move-history"></div>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Catur Sederhana. Dibuat dengan ❤️.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stockfish.js/10.0.2/stockfish.min.js"></script>
+    <script src="chess.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
